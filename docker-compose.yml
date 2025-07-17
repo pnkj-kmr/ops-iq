@@ -1,0 +1,37 @@
+# version: '3.8'
+
+# services:
+#   mongodb:
+#     image: mongo:7.0
+#     container_name: mongodb
+#     ports:
+#       - "27017:27017"
+#     volumes:
+#       - mongodb_data:/data/db
+#     environment:
+#       MONGO_INITDB_DATABASE: ops_iq
+#     restart: unless-stopped
+
+#   redis:
+#     image: redis:7.2-alpine
+#     container_name: redis
+#     ports:
+#       - "6379:6379"
+#     volumes:
+#       - redis_data:/data
+#     restart: unless-stopped
+
+#   ollama:
+#     image: ollama/ollama:latest
+#     container_name: ollama
+#     ports:
+#       - "11434:11434"
+#     volumes:
+#       - ollama_data:/root/.ollama
+#     restart: unless-stopped
+#     # Note: You'll need to pull models manually after starting
+
+# volumes:
+#   mongodb_data:
+#   redis_data:
+#   ollama_data:
